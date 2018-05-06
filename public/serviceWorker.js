@@ -17,9 +17,9 @@ var urlsToCache = [
     './index2.html',
     './screen.css',
     './main.js',
+    './serviceWorker.js',
     './images/kitten1.jpg',
-    './images/kitten2.jpg',
-    'http://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js'
+    './images/kitten2.jpg'
 ];
 
 self.addEventListener('install', function (event) {

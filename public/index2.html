@@ -6,15 +6,15 @@
     <title>OfflineAppP2</title>
     <link rel="stylesheet" href="./screen.css">
   </head>
-  <body ng-app="main" ng-controller="mainController">
+
+  <body>
     <h1>Hello, kittens!</h1>
     <!--Test caching with a button that shows an image online and then a button that shows an image offline. Image is cached.-->
     <!-- Need to use Service Workers Since AppCache will no longer be supported in the near future -->
     
     <h4>Cute kitten 2!</h4>
-    <img src="./images/kitten2.jpg" ng-show="showCatTwo">
+    <img src="./images/kitten2.jpg">
 
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="./main.js" charset="utf-8"></script>
     <script src="./serviceWorker.js" charset="utf-8"></script>
 
