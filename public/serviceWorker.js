@@ -13,6 +13,7 @@ if ('serviceWorker' in navigator) {
 var CACHE_NAME = 'kitties-cache';
 var urlsToCache = [
     './index.html',
+    './index2.html',
     './screen.css',
     './main.js',
     './images/kitten1.jpg',
