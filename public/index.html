@@ -10,17 +10,11 @@
     <h1>Hello, kittens!</h1>
     <!--Test caching with a button that shows an image online and then a button that shows an image offline. Image is cached.-->
     <!-- Need to use Service Workers Since AppCache will no longer be supported in the near future -->
-    <h4>Press this button to show a cute kitten!</h4>
-    <button type="button" ng-click="showCatOne = true">See kitten 1</button>
-    <img src="./images/kitten1.jpg" ng-show="showCatOne"> 
+    <h4>Cute kitten 1!</h4>
+    <img src="./images/kitten1.jpg"> 
     
     <div>&nbsp;</div>
     <a href="./index2.html"><button>See another kitten!</button></a>
-
-
-    <!-- <h4>Press this button to show a cute kitten!</h4>
-    <button type="button" ng-click="showCatTwo = true">See kitten 2</button>
-    <img src="./images/kitten2.jpg" ng-show="showCatTwo"> -->
 
     <!--try accessing an API using navigator.online with a graceful response when fails-->
     <!-- http://thecatapi.com/?id=733 -->

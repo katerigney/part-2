@@ -12,12 +12,14 @@ if ('serviceWorker' in navigator) {
 
 var CACHE_NAME = 'kitties-cache';
 var urlsToCache = [
+    './',
     './index.html',
     './index2.html',
     './screen.css',
     './main.js',
     './images/kitten1.jpg',
-    './images/kitten2.jpg'
+    './images/kitten2.jpg',
+    'http://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js'
 ];
 
 self.addEventListener('install', function (event) {
@@ -32,9 +34,9 @@ self.addEventListener('install', function (event) {
 
 self.addEventListener('fetch', function (event) {
     console.log(event.request.url);
-     event.respondWith(
-         caches.match(event.request).then(function (response) {
-             return response;
-         })
-     );
- });
+    event.respondWith(
+        caches.match(event.request).then(function (response) {
+            return response;
+        })
+    );
+});
