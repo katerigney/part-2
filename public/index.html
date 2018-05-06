@@ -6,13 +6,22 @@
     <title>OfflineAppP2</title>
     <link rel="stylesheet" href="./screen.css">
   </head>
-  <body>
-    <h1>Hello, World!</h1>
-     <!--Test caching with a button that shows an image online and then a button that shows an image offline. Image is cached.-->
-     <!-- Need to use Service Workers Since AppCache will no longer be supported in the near future -->
+  <body ng-app="main" ng-controller="mainController">
+    <h1>Hello, kittens!</h1>
+    <!--Test caching with a button that shows an image online and then a button that shows an image offline. Image is cached.-->
+    <!-- Need to use Service Workers Since AppCache will no longer be supported in the near future -->
+    <h4>Press this button to show a cute kitten!</h4>
+    <button type="button" ng-click="showCatOne = true">See kitten 1</button>
+    <img src="./images/kitten1.jpg" ng-show="showCatOne">     
+
+
+    <h4>Press this button to show a cute kitten!</h4>
+    <button type="button" ng-click="showCatTwo = true">See kitten 2</button>
+    <img src="./images/kitten2.jpg" ng-show="showCatTwo">
 
     <!--try accessing an API using navigator.online with a graceful response when fails-->
-
+    <!-- http://thecatapi.com/?id=733 -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="./main.js" charset="utf-8"></script>
   </body>
 </html>

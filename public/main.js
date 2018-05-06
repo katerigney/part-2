@@ -1,5 +1,4 @@
-const main = () => {
-  document.querySelector('h1').textContent += '?'
-}
+angular.module ("main", []).controller("mainController", ["$scope", "$http", ($scope, $http) => {
+}])
 
-document.addEventListener('DOMContentLoaded', main)
+
