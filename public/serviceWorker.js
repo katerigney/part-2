@@ -12,11 +12,11 @@ if ('serviceWorker' in navigator) {
 
 var CACHE_NAME = 'kitties-cache';
 var urlsToCache = [
-    '/index.html',
-    '/screen.css',
-    '/main.js',
-    '/images/kitten1.jpg',
-    '/images/kitten2.jpg'
+    './index.html',
+    './screen.css',
+    './main.js',
+    './images/kitten1.jpg',
+    './images/kitten2.jpg'
 ];
 
 self.addEventListener('install', function (event) {
