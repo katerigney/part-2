@@ -1,13 +1,13 @@
 
 OFFLINE 
 
-//WHO IS THIS FOR?
+//WHO AND WHY?
     - users who have low bandwidth data connections 
         - rural users
     - growing population of mobile users worldwide who have access to limited connection
     - Spotty connection is a reality, even for urban users with the latest smartphone
 
-//THINGS TO LINK ABOUT WHEN DEVELOPING A SITE OR APP
+//SOME APPROACHES 
     - Partial Offline vs. Full Offline(Native Apps, mostly)
     - Navigator.onLine - Offline/Online detection
         - Know how to react appropriately
@@ -16,7 +16,24 @@ OFFLINE
         - Image/graphic quality
         - Redundancies 
         - Efficiently making API calls
-    - Cache 
+    * - Caching
+        - files available from browser’s native cache 
+        - allows for reloads and refreshes
 
-SERVICE
+
+SERVICE WORKERS - Scripts that run behind the scenes to allow for 
+a better experience and control over the site/app, especially related with connectivity issues
+
+
+    - Basic CRUD Operations
+    - You can dynamically add links to the cache while still connected
+        - "Save this story for later"
+
+
+    OTHER COOL STUFF 
+    - push notifications and background sync
+    - Secure - works only with HTTPS or local host for developing
+    - https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API
+    - https://gist.github.com/Rich-Harris/fd6c3c73e6e707e312d7c5d7d0f3b2f9
+    - https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker
 
