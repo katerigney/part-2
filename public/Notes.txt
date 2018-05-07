@@ -16,7 +16,7 @@ OFFLINE
         - Image/graphic quality
         - Redundancies 
         - Efficiently making API calls
-    * - Caching
+  * - Caching
         - files available from browser’s native cache 
         - allows for reloads and refreshes
 
